@@ -39,7 +39,7 @@ jobs:
           pushd android_kernel_xiaomi_sdm710_LineageOS
           make O="$output_dir" \
                       vendor/xiaomi/mi845_defconfig \
-                      xiaomi/polaris.config
+                      vendor/xiaomi/polaris.config
           make -j $(nproc) \
                        O="$output_dir" \
                        CC=clang
